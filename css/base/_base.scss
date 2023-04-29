@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * make the scroll behavior smooth
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements box-sizing to be border-box
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+}
+
+/**
+ * Basic styles for ordered and unordered list
+ */
+ul,ol{
+ list-style: none;
+  padding: 0;
+  margin: 0;
+}
